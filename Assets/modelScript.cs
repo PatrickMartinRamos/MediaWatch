@@ -26,7 +26,7 @@ public class modelScript : MonoBehaviour
     {
         if (startRotate)
         {
-            phoneModel.transform.DOLocalRotate(new Vector3(0f, 360f, 0f), 1f, RotateMode.FastBeyond360)
+            phoneModel.transform.DOLocalRotate(new Vector3(0f, 360f, 0f), 2f, RotateMode.FastBeyond360)
                 .SetLoops(1, LoopType.Restart);
 
             phoneModel.transform.DOMoveX(0f, 1f).SetEase(Ease.Linear);
